@@ -1,8 +1,8 @@
 
-*** Railway Ticket System Android Application ***
+Railway Ticket System Android Application :-
     An Android app for booking train tickets, managing reservations.
 
-*** Features ***
+Features :-
     Used Firebase Database for Login , Signup
     Book Ticket
     Manage Profile    
