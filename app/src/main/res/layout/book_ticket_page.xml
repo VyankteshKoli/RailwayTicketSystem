@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#71A1EC"
+        tools:context=".BookTicketPage">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="381dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/grey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-180dp"
+            android:src="@drawable/railway3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circularbordersolid"
+            android:orientation="vertical"
+        android:layout_marginTop="-200dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="Orientation">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="-5dp"
+                        android:text="Book Ticket"
+                        android:textColor="@color/goodgrey"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/circular_grey_bordersolid"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_person_24" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/namelayout"
+                        android:layout_width="270dp"
+                        android:layout_height="78dp"
+                        android:layout_marginLeft="-1dp"
+
+                        android:textColor="#3A3131">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/name"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:hint="Name"
+                            android:textColorHint="#000"
+                            android:textColor="@color/goodgrey"
+                            android:textSize="15sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:src="@drawable/g1" />
+
+                        <RadioGroup
+                            android:id="@+id/gender"
+                            android:layout_width="256dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:outlineSpotShadowColor="#000"
+                            android:outlineAmbientShadowColor="#000"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="113dp"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:textColor="#000"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="113dp"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:textColor="#000"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="-10dp"
+                            android:background="@drawable/circular_grey_bordersolid"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_calendar_month_24" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/datelayout"
+                            android:layout_width="270dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#3A3131">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/datepicker"
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:focusable="false"
+                                android:hint="Select Date of Journey"
+                                android:textColorHint="#000"
+                                android:textColor="@color/goodgrey"
+                                android:textSize="15sp"
+                                tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center_vertical"
+                        android:paddingRight="8dp"
+                        tools:ignore="Orientation">
+
+                        <ImageView
+                            android:layout_width="47dp"
+                            android:layout_height="55dp"
+                            android:background="@drawable/circular_grey_bordersolid"
+                            android:padding="10dp"
+                            android:layout_marginTop="-5dp"
+                            android:src="@drawable/location" />>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-20dp"
+                            android:gravity="left"
+                            android:text="Select your Departure"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            tools:ignore="TextSizeCheck"></TextView>
+
+                        <Spinner
+                            android:id="@+id/spin1"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-260dp"
+                            android:outlineAmbientShadowColor="#000"
+                            android:outlineSpotShadowColor="#000"
+                            android:scrollbarSize="15dp"
+                            android:textColor="#000"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/text_view_spinner_error1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff0000"
+                            android:text="   Select your Departure City !"
+                            android:visibility="gone"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="-200dp"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    tools:ignore="Orientation">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/circular_grey_bordersolid"
+                        android:padding="10dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginLeft="-10dp"
+                        android:src="@drawable/route" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-20dp"
+                        android:gravity="left"
+                        android:textColor="#000"
+                        android:text="Select your Destination"
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck"/>
+
+                    <Spinner
+                        android:id="@+id/spin2"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-260dp"
+                        android:scrollbarSize="15dp"
+                        android:textColor="#000"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/text_view_spinner_error2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:text="    Select your Destination City !"
+                        android:visibility="gone"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="-200dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/circular_grey_bordersolid"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_access_time_24" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/timelayout"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:textColor="#3A3131">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/time"
+                            android:layout_width="130dp"
+                            android:layout_height="50dp"
+                            android:focusable="false"
+                            android:hint="Select Timing"
+                            android:textColorHint="#000"
+                            android:textColor="@color/goodgrey"
+                            android:textSize="15sp"
+                            tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/circular_grey_bordersolid"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_phone_24" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/contactlayout"
+                        android:layout_width="270dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#3A3131">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/contact"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:hint="Enter your Contact No."
+                            android:textColor="@color/goodgrey"
+                            android:textColorHint="#000"
+                            android:textSize="15dp"
+                            tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    tools:ignore="Orientation">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginLeft="-5dp"
+                        android:background="@drawable/circular_grey_bordersolid"
+                        android:padding="10dp"
+                        android:src="@drawable/payment" />>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-20dp"
+                        android:gravity="left"
+                        android:text="Payment"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        tools:ignore="TextSizeCheck"/>
+
+
+                    <RadioGroup
+                        android:layout_width="256dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="-260dp"
+                        android:layout_marginTop="10dp"
+                        android:outlineSpotShadowColor="#000"
+                        android:outlineAmbientShadowColor="#000"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:text="QR Code"
+                            android:textColor="#000"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <RadioButton
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:text="UPI"
+                            android:textColor="#000"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/bookticket"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_shape"
+                    android:gravity="center_vertical"
+                    android:text="Submit"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71384052145",
+    "project_id": "railway-ticket-system",
+    "storage_bucket": "railway-ticket-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71384052145:android:9979cbaeb53e7a9f550d90",
+        "android_client_info": {
+          "package_name": "com.example.railwayticketsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfyFpKHZhxvsU3clbuovcjexI7hw_CrXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
