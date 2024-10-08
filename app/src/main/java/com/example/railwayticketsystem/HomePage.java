@@ -58,35 +58,6 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-//        viewPager = findViewById(R.id.viewPager);
-//        ImagePagerAdapter adapter = new ImagePagerAdapter(this);
-//        viewPager.setAdapter(adapter);
-//
-//        final Handler handler = new Handler(Looper.getMainLooper());
-//        final Runnable update = new Runnable() {
-//            public void run() {
-//                if (currentPage == adapter.getCount()) {
-//                    currentPage = 0;
-//                }
-//                viewPager.setCurrentItem(currentPage++, true);
-//            }
-//        };
-//
-//        timer = new Timer();
-//        timer.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                handler.post(update);
-//            }
-//        }, 2000, 2000);
-//}
-//
-//        @Override
-//        protected void onDestroy () {
-//            super.onDestroy();
-//            if (timer != null) {
-//                timer.cancel();
-//            }
     }
 
 
