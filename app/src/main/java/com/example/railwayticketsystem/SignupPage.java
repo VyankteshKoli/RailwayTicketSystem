@@ -233,17 +233,7 @@ public class SignupPage extends AppCompatActivity {
                                 // Send Verification Email
                                 firebaseUser.sendEmailVerification();
                                 Toast.makeText(SignupPage.this, "User Registered Successfully, Please Verify Your Email from GmailBox", Toast.LENGTH_SHORT).show();
-
-                           /*     // Open User Profile after Successful Registration
-                                Intent intent =  new Intent(SignupPage.this,HomePage.class);
-
-                                // to prevent user from returning back to Register Activity on pressing back button after registration
-                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                        | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
-                                finish(); // to close register activity */
-
-                            }
+            }
                             else
                             {
                                 Toast.makeText(SignupPage.this, "User Registration Failed, Please try Again", Toast.LENGTH_SHORT).show();
