@@ -47,7 +47,7 @@
             android:background="@drawable/edit_text_shape"
             android:drawableStart="@drawable/baseline_person_24"
             android:drawablePadding="12dp"
-            android:hint="Email ID"
+            android:hint="Enter Email ID"
             android:textColor="#000"
             android:textColorHint="#000"
             android:inputType="textEmailAddress"
