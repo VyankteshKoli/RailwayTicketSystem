@@ -25,7 +25,7 @@
             android:name=".BookTicketPage"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".LoginPage"
             android:exported="false" />
         <activity
             android:name=".HomePage"
@@ -34,7 +34,7 @@
             android:name=".SignupPage"
             android:exported="false" />
         <activity
-            android:name=".LoginPage"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
